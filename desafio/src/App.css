@@ -5,10 +5,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 .background-image{
-    margin-top: 10vh;
+    margin-top: 20vh;
     display: flex;
     justify-content: center;
 }
@@ -77,4 +79,120 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.titleinbox{
+    width: 100%;
+    margin-left: 12.6rem;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.news-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 22rem;
+}
+
+.imagens-news{
+    width: 30rem;
+    margin: 1rem;
+    /* margin-bottom: 40%; */
+}
+.titles-news{
+    width: 30rem;
+    font-size: 15px;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+.titles-news a{
+    color: #27ACCF;
+    text-decoration: none;
+}
+.description-news{
+    width: 30rem;
+    font-size: 15px;
+    margin-left: 1rem;
+}
+
+
+.line-separation1{
+    width: 95rem;
+    height: 1px;
+    background-color: #707070;
+    margin: 6rem;
+}
+
+
+
+.content-boxExtras{
+    width: 100%;
+    display: flex;
+    margin-bottom: 18rem;
+}
+
+
+
+.images-extras {
+    width: 15rem;
+}
+
+.extras-box{
+    width: 526px;
+    margin-left: 11.8rem;
+}
+.h1-extras{
+    font-size: 25px;
+    color: #27ACCF;
+    margin-bottom: 3rem;
+}
+.span-extras-d{
+    height: 353px;
+    top: 3025px;
+    left: 141px;
+}
+.texts-extras_{
+    width: 484px;
+    font-size: 20px;
+    color: #000000;
+}
+.texts-extras{
+    width: 484px;
+    font-size: 20px;
+    color: #000000;
+    border-top-style: solid;
+    border-color:  #707070;
+    padding-top: 25px;
+}
+
+
+
+.extras-box-top{
+    width: 526px;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1-extras-top{
+    color: #CF5454;
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+.span-images-extras{
+    display: flex;
+    flex-direction: column;
+}
+span-texts-extras {
+    display: flex;
+}
+
+.h1-verdadis{
+    color: #CF5454;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.p-euzis {
+    font-size: 15px;
 }
