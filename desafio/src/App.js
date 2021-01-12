@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Logo from './Assets/logo.png';
+import Facebook from './Assets/facebook-icon.png';
+import Twitter from './Assets/twitter-icon.png';
+import Background from './Assets/background.png'
 import './App.css';
 
 
@@ -36,7 +40,25 @@ class Tudum extends Component {
   render(){
     return(
       <div className="hub">
+        <header>
+          <div className="span-lg"><img className="logo" src={Logo} alt="Logo Tudum"></img></div>
+          <span className="social">
+            <a className="social-botom" href="#"><img className="social-icons" src={Facebook} alt="Icone Facebook"/>Curtir</a>
+            <a className="social-botom" href="#"><img className="social-icons" src={Twitter} alt="Icone Twitter"/>Seguir</a>
+          </span>
+        </header>
 
+        <div className="background-image">
+          <div className="position">
+            <span className="title-class">
+              <h1 className="title">The Good Place</h1>
+            </span>
+            <span className="description-class"> 
+              <p className="description">Praesent malesuada urna nisi, quis volutpat erat hendrerit non.</p>
+            </span>
+          </div>
+          <img className="back-img" src={Background} alt="Fundo TI"/>
+        </div>
 
 
 
