@@ -98,6 +98,18 @@ handleChange = (scroll) => {
           </div>
         ))}
         </div>
+        <div className="box-footer-finish-3">
+        <h2 className="title-footer-2">News</h2>
+        {listMovie.slice(9,11).map((item, index) => (
+          <div key={index} className="box-finish-2">
+            <img src={item.urlToImage} className="image-footer-finish" />
+            <div className="text-finish">
+              <p className="author-finish">{item.author}</p>
+              <p className="description-finish">{item.description}</p>
+            </div>
+          </div>
+        ))}
+        </div>
       </div>
     )
   }
@@ -135,15 +147,17 @@ handleChange = (scroll) => {
               <p className="paragraph-footer">
                 Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Quem manda na minha terra sou euzis! Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
               </p>
-              <button className="button-footer-1">
-                <img src={commit} className="figure-commit" />
-              </button>
-              <button className="button-footer-1">
-                
-              </button>
-              <button className="button-footer-2">
-                Telas (1)
-              </button>
+              <div className="buttons-footer">
+                <button className="button-footer-1">
+                  <img src={commit} className="figure-commit" />
+                </button>
+                <button className="button-footer-1">
+                  
+                </button>
+                <button className="button-footer-2">
+                  Telas (1)
+                </button>
+              </div>
             </div>
           </div>
         </div>
