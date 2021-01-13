@@ -13,7 +13,7 @@ const api = axios.create({
 
 class App extends Component {
   state = {
-    listMovie: [],
+    listNews: [],
   }  
 
 handleChange = (scroll) => {
@@ -24,18 +24,18 @@ handleChange = (scroll) => {
     const response = await api.get();
 
     this.setState({
-      listMovie: response.data.articles
+      listNews: response.data.articles
     });
     console.log(response.data.articles)
   }
 
   main = () => {
-    const { listMovie } = this.state
+    const { listNews } = this.state
 
     return(
       <div>
         <div className="box-main">
-          {listMovie.slice(0,1).map((item, index) => (
+          {listNews.slice(0,1).map((item, index) => (
             <div key={index} className="box-news-main">
               <img src={item.urlToImage} className="image-news-main" />
               <div className="box-text-news">
@@ -47,7 +47,7 @@ handleChange = (scroll) => {
         </div>
         <h2 className="title-news">THE NEWS</h2>
         <div className="box-main">
-          {listMovie.slice(0,3).map((item, index) => (
+          {listNews.slice(0,3).map((item, index) => (
             <div key={index} className="box-news">
               <img src={item.urlToImage} className="image-main" />
               <div className="box-text-news">
@@ -58,7 +58,7 @@ handleChange = (scroll) => {
         </div>
           <h2 className="title-news-2">THE NEWS</h2>
         <div className="box-main">
-          {listMovie.slice(4,10).map((item, index) => (
+          {listNews.slice(4,10).map((item, index) => (
             <div key={index} className="box-news-2">
               <img src={item.urlToImage} className="image-main-part-2" />
               <div className="box-text-news">
@@ -73,13 +73,13 @@ handleChange = (scroll) => {
   } 
 
   finish = () => {
-    const { listMovie } = this.state
+    const { listNews } = this.state
 
     return(
       <div className="box-finish-main">
         <div className="box-footer-finish">
         <h2 className="title-footer">The News is here</h2>
-        {listMovie.slice(1,6).map((item, index) => (
+        {listNews.slice(1,6).map((item, index) => (
           <div key={index} className="box-finish">
             <p className="text-footer">{item.description}</p>
             <div className="division-footer"></div>
@@ -88,7 +88,7 @@ handleChange = (scroll) => {
         </div>
         <div className="box-footer-finish-2">
         <h2 className="title-footer-2">News</h2>
-        {listMovie.slice(7,9).map((item, index) => (
+        {listNews.slice(7,9).map((item, index) => (
           <div key={index} className="box-finish-2">
             <img src={item.urlToImage} className="image-footer-finish" />
             <div className="text-finish">
@@ -100,7 +100,7 @@ handleChange = (scroll) => {
         </div>
         <div className="box-footer-finish-3">
         <h2 className="title-footer-2">News</h2>
-        {listMovie.slice(9,11).map((item, index) => (
+        {listNews.slice(9,11).map((item, index) => (
           <div key={index} className="box-finish-2">
             <img src={item.urlToImage} className="image-footer-finish" />
             <div className="text-finish">
