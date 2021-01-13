@@ -16,14 +16,55 @@ body {
   justify-content: center;
 }
 
+.box-logo-tudum {
+  width: 100%;
+}
+
+@media (max-width:425px) {
+  .box-logo-tudum {
+      display: flex;
+          }
+      }
+
+#menu-hamburguer {
+  color: rgb(7, 7, 7);
+  font-size: 29px;
+  cursor: pointer;
+  margin-top: 22px;
+  margin-left: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width:425px) {
+  #menu-hamburguer {
+      display: block;
+          }
+      }
+
 .box-button-header {
   display: flex;
+}
+
+@media (max-width:425px) {
+  .box-button-header {
+      display: none;
+  }
 }
 
 .logo-tudum {
   width: 17%;
   height: 86px;
   margin-left: 27rem;
+}
+
+@media (max-width:425px) {
+  .logo-tudum {
+    height: 69px;
+    width: 31%;
+    margin-top: 5px;
+    margin-left: 6rem;
+  }
 }
 
 .button-header {
@@ -64,8 +105,8 @@ body {
   font-size: 24px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  margin-left: 5rem;
-  margin-top: 5rem;
+  margin-left: 4rem;
+  margin-top: 7rem;
   margin-bottom: -5rem;
 }
 
@@ -75,9 +116,43 @@ body {
   justify-content: center;
 }
 
+.box-news-main {
+  margin-top: 5rem;
+  width: 90%;
+  height: 30rem;
+}
+
+.image-news-main {
+  width: 100%;
+  height: 30rem;
+}
+
+.title-news-main {
+  background-color: #58C7E4;
+  width: 26%;
+  margin-left: 3rem;
+  padding: 10px;
+  text-align: justify;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  margin-top: -9rem;
+}
+
+.text-news-main {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-left: 3rem;
+}
+
 .box-news {
-  width: 30%;
-  height: 13rem;
+  width: 31%;
+  height: 14rem;
   padding: 1rem;
   margin-top: 5rem;
 }
@@ -96,7 +171,136 @@ body {
 
 .image-main {
   width: 100%;
-  height: 13rem;
+  height: 14rem;
+}
+
+.title-news-2 {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-left: 4rem;
+  margin-top: 5rem;
+  margin-bottom: -9rem;
+}
+
+.image-main-part-2 {
+  width: 100%;
+  height: 14rem;
+}
+
+.box-news-2 {
+  width: 31%;
+  height: 14rem;
+  padding: 1rem;
+  margin-top: 9rem;
+}
+
+.text-author {
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #58C7E4;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.text-part-2 {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.division {
+  background-color: #707070;
+  width: 90%;
+  height: 1px;
+  margin-top: 10rem;
+  margin-left: 4rem;
+}
+
+.box-finish-main {
+  display: flex;
+}
+
+.box-footer-finish {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  margin-top: 5rem;
+  margin-left: 4rem;
+}
+
+.title-footer {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #58C7E4;
+}
+
+.text-footer {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  width: 87%;
+}
+
+.division-footer {
+  background-color: #707070;
+  width: 87%;
+  height: 2px;
+  margin-top: 1rem;
+}
+
+.box-footer-finish-2 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 5rem;
+}
+
+.box-finish-2 {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.title-footer-2 {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #CF5454;
+}
+
+.box-finish {
+  margin-top: 1rem;
+}
+
+.image-footer-finish {
+  width: 50%;
+  height: 9rem;
+}
+
+
+.text-finish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.author-finish {
+  color: #CF5454;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.description-finish {
+  width: 120%;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
 .button-footer {
@@ -104,7 +308,7 @@ body {
   width: 100%;
   height: 40px;
   border: none;
-  margin-top: 5rem;
+  margin-top: 18rem;
   cursor: pointer;
 }
 

@@ -34,9 +34,20 @@ handleChange = (scroll) => {
 
     return(
       <div>
+        <div className="box-main">
+          {listMovie.slice(0,1).map((item, index) => (
+            <div key={index} className="box-news-main">
+              <img src={item.urlToImage} className="image-news-main" />
+              <div className="box-text-news">
+                <h3 className="title-news-main">THE NEWS</h3>
+                <p className="text-news-main">{item.title}</p>
+              </div>
+            </div>
+          ))}
+        </div>
         <h2 className="title-news">THE NEWS</h2>
         <div className="box-main">
-          {listMovie.map((item, index) => (
+          {listMovie.slice(0,3).map((item, index) => (
             <div key={index} className="box-news">
               <img src={item.urlToImage} className="image-main" />
               <div className="box-text-news">
@@ -45,15 +56,59 @@ handleChange = (scroll) => {
             </div>
           ))}
         </div>
+          <h2 className="title-news-2">THE NEWS</h2>
+        <div className="box-main">
+          {listMovie.slice(4,10).map((item, index) => (
+            <div key={index} className="box-news-2">
+              <img src={item.urlToImage} className="image-main-part-2" />
+              <div className="box-text-news">
+                <p className="text-author">{item.author}</p>
+                <p className="text-part-2">{item.title}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     )
   } 
+
+  finish = () => {
+    const { listMovie } = this.state
+
+    return(
+      <div className="box-finish-main">
+        <div className="box-footer-finish">
+        <h2 className="title-footer">The News is here</h2>
+        {listMovie.slice(1,6).map((item, index) => (
+          <div key={index} className="box-finish">
+            <p className="text-footer">{item.description}</p>
+            <div className="division-footer"></div>
+          </div>
+        ))}
+        </div>
+        <div className="box-footer-finish-2">
+        <h2 className="title-footer-2">News</h2>
+        {listMovie.slice(7,9).map((item, index) => (
+          <div key={index} className="box-finish-2">
+            <img src={item.urlToImage} className="image-footer-finish" />
+            <div className="text-finish">
+              <p className="author-finish">{item.author}</p>
+              <p className="description-finish">{item.description}</p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+    )
+  }
+
 
   render() {
     return(
       <div>
         <div className="header">
           <div className="box-logo-tudum">
+          <span id="menu-hamburguer">&#9776;</span>
             <img src={logoTudum} className="logo-tudum"/>
           </div>
           <div className="box-button-header">
@@ -67,11 +122,13 @@ handleChange = (scroll) => {
             </button>
           </div>
         </div>
-        {this.main()}
+        {this.main()} 
         <div>
-          <button className="button-footer" onClick={this.handleChange}>
-           <p className="text-button-footer"> VOLTAR AO TOPO ↑ </p>
-          </button>
+          <div className="division"></div>
+            {this.finish()}
+            <button className="button-footer" onClick={this.handleChange}>
+            <p className="text-button-footer"> VOLTAR AO TOPO ↑ </p>
+            </button>
           <div className="footer">
             <div className="box-footer">
               <img src={logoTudum2} className="logo-footer" />
