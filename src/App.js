@@ -26,7 +26,6 @@ handleChange = (scroll) => {
     this.setState({
       listNews: response.data.articles
     });
-    console.log(response.data.articles)
   }
 
   main = () => {
@@ -47,7 +46,7 @@ handleChange = (scroll) => {
         </div>
         <h2 className="title-news">THE NEWS</h2>
         <div className="box-main">
-          {listNews.slice(0,3).map((item, index) => (
+          {listNews.slice(1,4).map((item, index) => (
             <div key={index} className="box-news">
               <img src={item.urlToImage} className="image-main" />
               <div className="box-text-news">
@@ -58,7 +57,7 @@ handleChange = (scroll) => {
         </div>
           <h2 className="title-news-2">THE NEWS</h2>
         <div className="box-main">
-          {listNews.slice(4,10).map((item, index) => (
+          {listNews.slice(5,11).map((item, index) => (
             <div key={index} className="box-news-2">
               <img src={item.urlToImage} className="image-main-part-2" />
               <div className="box-text-news">
@@ -88,7 +87,7 @@ handleChange = (scroll) => {
         </div>
         <div className="box-footer-finish-2">
         <h2 className="title-footer-2">News</h2>
-        {listNews.slice(7,9).map((item, index) => (
+        {listNews.slice(14, 16).map((item, index) => (
           <div key={index} className="box-finish-2">
             <img src={item.urlToImage} className="image-footer-finish" />
             <div className="text-finish">
@@ -100,7 +99,7 @@ handleChange = (scroll) => {
         </div>
         <div className="box-footer-finish-3">
         <h2 className="title-footer-2">News</h2>
-        {listNews.slice(9,11).map((item, index) => (
+        {listNews.slice(17, 19).map((item, index) => (
           <div key={index} className="box-finish-2">
             <img src={item.urlToImage} className="image-footer-finish" />
             <div className="text-finish">
