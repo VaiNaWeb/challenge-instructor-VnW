@@ -36,6 +36,7 @@ body {
   display: flex;
   align-items: center;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .name-button-header {
@@ -104,6 +105,7 @@ body {
   height: 40px;
   border: none;
   margin-top: 5rem;
+  cursor: pointer;
 }
 
 .text-button-footer {
@@ -148,6 +150,7 @@ body {
   border: none;
   background-color: #ffffff;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .figure-commit {
@@ -165,4 +168,5 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   margin-top: 1rem;
+  cursor: pointer;
 }

@@ -52,7 +52,7 @@ handleChange = (scroll) => {
   render() {
     return(
       <div>
-        <div  className="header">
+        <div className="header">
           <div className="box-logo-tudum">
             <img src={logoTudum} className="logo-tudum"/>
           </div>
