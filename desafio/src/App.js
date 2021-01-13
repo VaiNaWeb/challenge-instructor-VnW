@@ -46,10 +46,10 @@ class Tudum extends Component {
       <div className="hub">
         <header>
           <div className="span-lg"><img className="logo" src={Logo} alt="Logo Tudum"></img></div>
-          <span className="social">
+          <div className="social">
             <a className="social-botom" href="#"><img className="social-icons" src={Facebook} alt="Icone Facebook"/>Curtir</a>
             <a className="social-botom" href="#"><img className="social-icons" src={Twitter} alt="Icone Twitter"/>Seguir</a>
-          </span>
+          </div>
         </header>
 
         <div className="background-image">
@@ -71,7 +71,15 @@ class Tudum extends Component {
         <span className="titleinbox">
           <h1 className="titlein">The Good Place</h1>
         </span>
-          {this.state.titles.map((item, index) => (
+          {this.state.titles.slice(0, 3).map((item, index) => (
+            <div className="class-news" key={index}>
+              <img className="imagens-news" src={item.urlToImage}/>
+            </div>
+          ))}
+          <span className="titleinbox-2">
+            <h1 className="titlein">The Good Place</h1>
+          </span>
+          {this.state.titles.slice(0, 6).map((item, index) => (
             <div className="class-news" key={index}>
               <img className="imagens-news" src={item.urlToImage}/>
               <p className="titles-news"><a href={item.url}>{item.author}</a></p>

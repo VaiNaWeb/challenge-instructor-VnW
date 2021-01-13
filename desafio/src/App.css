@@ -1,3 +1,15 @@
+/* MOBILE */
+
+
+
+
+/*  */
+/* @media(max-width: 768px) {
+    p{
+        margin: 0;
+    }
+} */
+
 header {
     width: 100%;
     height: 12vh;
@@ -8,6 +20,11 @@ header {
     position: fixed;
     top: 0;
 }
+@media(max-width: 768px) {
+    header{
+        width: 100%;
+    }
+}
 
 .background-image{
     margin-top: 20vh;
@@ -16,6 +33,11 @@ header {
 }
 .back-img{
     width: 110rem;
+}
+@media(max-width: 768px) {
+    .back-img{
+        width: 40rem;
+    }
 }
 
 .position{
@@ -26,6 +48,12 @@ header {
     margin-top: 12rem;
     color: #ffff;
 }
+@media(max-width: 768px) {
+    .position{
+        display: none;
+    }
+}
+
 .title-class {
     width: 311px;
     height: 46px;
@@ -48,15 +76,25 @@ header {
 }
 
 .span-lg {
-    width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
 }
+@media(max-width: 768px) {
+    span-lg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+    }
+}
+
+
 
 .logo{
     width: 11rem;
 }
+
 
 .social-icons{
     width: 2rem;
@@ -67,6 +105,11 @@ header {
     display: flex;
     justify-content: flex-end;
     margin-right: 8%;
+}
+@media(max-width: 768px) {
+    .social{
+        display: none;
+    }
 }
 .social-botom{
     width: 7rem;
@@ -79,6 +122,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000000;
 }
 
 .titleinbox{
@@ -87,6 +131,22 @@ header {
     text-transform: uppercase;
     font-size: 10px;
 }
+.titleinbox-2{
+    width: 100%;
+    margin-left: 12.6rem;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 12rem;
+}
+@media(max-width: 768px) {
+    .titleinbox{
+        margin-left: 9.3rem;
+    }
+    .titleinbox-2{
+        margin-left: 9.3rem;
+    }
+}
+
 
 .news-box{
     width: 100%;
@@ -95,9 +155,9 @@ header {
     flex-wrap: wrap;
     margin-top: 22rem;
 }
-
 .imagens-news{
     width: 30rem;
+    height: 18rem;
     margin: 1rem;
     /* margin-bottom: 40%; */
 }
@@ -132,6 +192,14 @@ header {
     display: flex;
     margin-bottom: 18rem;
 }
+@media(max-width: 768px) {
+    .content-boxExtras{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
 
@@ -144,11 +212,19 @@ header {
     width: 526px;
     margin-left: 11.8rem;
 }
+@media(max-width: 768px) {
+    .extras-box{
+        margin-left: 0;
+        margin-bottom: 8rem;
+    }
+}
 .h1-extras{
     font-size: 25px;
     color: #27ACCF;
     margin-bottom: 3rem;
 }
+
+
 .span-extras-d{
     height: 353px;
     top: 3025px;
@@ -183,6 +259,7 @@ header {
     font-size: 25px;
     margin-bottom: 3rem;
 }
+
 .span-images-extras{
     display: flex;
     align-items: center;
