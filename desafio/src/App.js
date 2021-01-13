@@ -119,14 +119,19 @@ class Tudum extends Component {
             <h1 className="h1-extras-top">Se pirulita daquisis</h1>
             <span className="span-images-extras">
               <img className="images-extras" src={Imagem1} />
-              <img className="images-extras" src={Imagem2} />
+              <span>
+                <p className="h1-verdadis">Verdadis</p>
+                <p className="p-euzis">Quem manda na minha terra sou euzis!</p> 
+              </span>
+              
             </span>
 
             <span className="span-texts-extras">
-              <p className="h1-verdadis">Verdadis</p>
-              <p className="p-euzis">Quem manda na minha terra sou euzis!</p>
-              <p className="h1-verdadis">Verdadis</p>
-              <p className="p-euzis">Quem manda na minha terra sou euzis!</p>
+              <img className="images-extras" src={Imagem2} />
+              <span>
+                <p className="h1-verdadis">Verdadis</p>
+                <p className="p-euzis">Quem manda na minha terra sou euzis!</p>
+              </span>
             </span>
 
             <span>
@@ -134,8 +139,13 @@ class Tudum extends Component {
             </span>
           </div>
         </div>
+        
+        <div className="footer-color">
+            <a className="toTop" href="#">VOLTAR AO TOPO</a>
+        </div>
+        <footer>
 
-
+        </footer>
 
       </div>
     )
