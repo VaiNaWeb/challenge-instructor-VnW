@@ -149,10 +149,27 @@ class Tudum extends Component {
         </div>
         
         <div className="footer-color">
-            <a className="toTop" href="#">VOLTAR AO TOPO</a>
+            <a className="toTop" href="#">VOLTAR AO TOPO ↑</a>
         </div>
         <footer>
-
+            <div className="footer-box-flex">
+              <img className="logo-footer" src={Logo} />
+              <p className="text-footer">Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Quem manda na minha terra sou euzis! Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                <button className="button-circle"></button>
+                <button className="button-circle"></button>
+                <button className="button-telas">Telas 1</button>
+            </div>
+            <div className="footer-box-flex-mobile">
+              <span className="span-buttons-mobile">
+                <button className="button-circle-mobile"></button>
+                <button className="button-circle-mobile"></button>
+                <button className="button-telas-mobile">Telas 1</button>
+              </span>
+              <span className="span-info-mobile">
+                <p className="text-footer-mobile">Mussum Ipsum, cacilds vidis litro   abertis.Praesent malesuada urna nisi, quis volutpat erat hendrerit non.   Namvulputate dapibus. Quem manda na minha terra sou euzis! Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                <img className="logo-footer-mobile" src={Logo} />
+              </span>
+            </div>
         </footer>
 
       </div>
