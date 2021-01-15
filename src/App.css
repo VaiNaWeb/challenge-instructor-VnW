@@ -1,38 +1,201 @@
-.App {
-  text-align: center;
+html,*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.box-menu{
+
+  background-color:#7567d1;
+  display: flex;
+  height: 10%;
+  justify-content: center;  
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.img-title{  
+  width: 10%;
+  height: 10%;
+  margin: 1rem;
+  margin-left: 30%;
+
+  
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-curtir{
+  display: flex;
+  width: 10%;
+  height: 10%;
+  margin-top: 2.5%;
+  font-size: 15px;
+  margin-left: 20%;
+  margin-right: 3px;
+  border-radius: 5px;
+ 
+}
+.logo-facebook{
+  width: 20px;
+  height: 20px;
+  margin:3px;
+}
+.button-seguir{
+  display: flex;
+  width: 10%;
+  height: 10%; 
+  margin-top: 2.5%;  
+  font-size: 15px;
+  border-radius: 5px;
+ 
+  
+}
+.logo-twitter{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin: 3px;
+}
+
+.box-map1{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5rem;
+
+}
+
+.primeira-img-news{
+  width: 658px;
+}
+  
+.title1{
+  background-color: aqua;
+  width: 40vh;
+  font-size: 15;
+  position: absolute;
+  margin-top: -10%;
+  color: #ffff;
+}
+.description{
+  width: 50vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  position: absolute;
+  margin-top: -6% ;
+  color: #ffff;
+}
+
+.box-map2{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+
+}
+.title2{
+  position: absolute;
+  margin-top: -1%;
+  margin-right: 53%;
+  font-size: 15px;
+ 
+}
+.img-news{
+  width: 250px;
+  
+}
+.box-descricao-meio{
+  width: 30vh;
+  font-size: 10px;
+}
+
+.box-return-map2{
+  margin: 1rem;
+}
+
+.box-map3{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.box-return-map3{
+  margin:1rem;
+}
+
+.title3{
+  font-size: 20px;
+  text-align: end;
+
+
+}
+
+.box-descricao3{
+  width: 250px;
+  font-size: 10px;
+
+}
+.img-news-meio3{
+  width: 250px;
+  
+}
+
+.box-map4{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+  margin: 1rem;
+}
+.descricao4{
+  width: 50vh;
+  margin: 1rem;
+  font-size: 10px;
+  
+}
+.box-map5{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  justify-content: space-around;  
 }
 
-.App-link {
-  color: #61dafb;
+.img-news-meio5{
+  width: 100px;
+  margin: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-descricao5{  
+  justify-content: space-around;
+  width: 30vh;
+  font-size: 10px;  
+}
+
+.box-return-map5{
+  margin:1rem;
+  display: flex;
+}
+
+footer{
+  background-color:#524e72;
+  height: 10%;
+}
+
+.logo-footer{
+  width: 10%;
+  height: 10%;
+  margin-right: 50%; 
+}
+
+.volta-topo{
+  background-color: #7567d1;
+  height: 5vh;
+  font-size: 10px;
+  color:#ffff;
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+  
 }
