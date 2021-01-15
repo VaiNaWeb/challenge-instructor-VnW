@@ -64,12 +64,9 @@ renderMain = () => {
           ))}
         </div>     
         <section className="container_end_main">
-          <div className="box_texts">
-            <p className="texts1">Assererrê a errê petuberê petê</p>
-            <p className="texts2">Se pirulita daquisis</p>
-          </div>
           <div className="end_main">
             <div className="wrap_end_main">
+            <p className="texts1">Assererrê a errê petuberê petê</p>
               {this.state.newList.slice(0,5).map((item, index) => (
               <div key={index} className="box_titles_news">
                 <p className="title_main_news">{item.title}</p>
@@ -77,6 +74,7 @@ renderMain = () => {
               ))}
             </div>
             <div className="wrap_end_main_two">
+            <p className="texts2">Se pirulita daquisis</p>
               <div className="box_end_main">
                 <img className="image" src={Tudum} alt="" />
                 <div className="box_paragrafo_end_main">
