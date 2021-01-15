@@ -4,26 +4,18 @@ html,*{
   box-sizing: border-box;
 }
 
-
 .box-menu{
-
   background-color:#7567d1;
   display: flex;
   height: 10%;
-  justify-content: center;  
-  
-  
+  justify-content: center;     
 }
-
-
 
 .img-title{  
   width: 10%;
   height: 10%;
   margin: 1rem;
-  margin-left: 30%;
-
-  
+  margin-left: 30%;  
 
 }
 
@@ -49,10 +41,9 @@ html,*{
   height: 10%; 
   margin-top: 2.5%;  
   font-size: 15px;
-  border-radius: 5px;
- 
-  
+  border-radius: 5px;  
 }
+
 .logo-twitter{
   width: 20px;
   height: 20px;
@@ -61,126 +52,174 @@ html,*{
 }
 
 .box-map1{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 5rem;
-
+  align-items: center;
+  width: 90%;
 }
 
-.primeira-img-news{
-  width: 658px;
+.primeira-img-news{  
+  width: 100%;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 10%;
 }
   
 .title1{
-  background-color: aqua;
+  background-color: rgb(8, 188, 243);
+  margin-left: 10%;
   width: 40vh;
   font-size: 15;
-  position: absolute;
-  margin-top: -10%;
+  position: relative;
+  margin-top: -15rem;
   color: #ffff;
 }
 .description{
   width: 50vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10px;
-  position: absolute;
-  margin-top: -6% ;
+  margin-left: 10%;
+  position: relative;
   color: #ffff;
 }
 
 .box-map2{
   display: flex;
-  justify-content: center;
-  margin: 1rem;
-
+  width:100%;
+  margin-left:1rem;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 .title2{
-  position: absolute;
-  margin-top: -1%;
-  margin-right: 53%;
   font-size: 15px;
- 
+  margin-top: 6rem;
+  margin-left: 3rem; 
 }
-.img-news{
-  width: 250px;
-  
-}
-.box-descricao-meio{
-  width: 30vh;
-  font-size: 10px;
+
+.img-news2{
+  width:94%;
+  height: 10rem;  
 }
 
 .box-return-map2{
-  margin: 1rem;
+  width: 30%;
+  height: 14rem;
+  margin-left: 2%;
+}
+
+.title-img{
+    font-size: 10px;
+    width: 60%;
+    background-color: orange;
+    position: relative;
+    margin-top: -3rem;
 }
 
 .box-map3{
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 1rem;
+  width:100%;
+  margin-left:1rem;
+  margin-top: -5rem;
 }
 
 .box-return-map3{
-  margin:1rem;
+  width: 30%;
+  height: 14rem;
+  margin-left: 2%;
+  margin-top: 5rem;
 }
 
 .title3{
-  font-size: 20px;
-  text-align: end;
-
-
-}
-
-.box-descricao3{
-  width: 250px;
-  font-size: 10px;
-
+  font-size: 15px;
+  margin-top: 1rem;
+  margin-left: 3rem; 
+  
 }
 .img-news-meio3{
-  width: 250px;
-  
+  width:94%;
+  height: 10rem; 
+
+}
+.title-img3{
+  font-size: 10px;
+  width: 90%;
+  position: relative;
+  color: rgb(8, 188, 243);
+  margin-top: 1rem;
+
+}
+.descricao-3{
+  width: 90%;
+  font-size: 10px;
+  position: relative;
+  margin-top: 5px;
 }
 
 .box-map4{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin: 1rem;
+  width: 100%;
+  margin-left: 2rem;
+}
+.title4{
+  font-size: 15px;
+  margin-top: 5rem;
+  margin-left: 1rem;
+
 }
 .descricao4{
   width: 50vh;
   margin: 1rem;
-  font-size: 10px;
-  
-}
-.box-map5{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  justify-content: space-around;  
-}
-
-.img-news-meio5{
-  width: 100px;
-  margin: 2rem;
-}
-
-.box-descricao5{  
-  justify-content: space-around;
-  width: 30vh;
   font-size: 10px;  
 }
 
-.box-return-map5{
-  margin:1rem;
+.linha{
+  background-color: black;
+  width: 50vh;
+  height: 1px;
+  margin-left: 1rem;
+}
+
+.box-final{
   display: flex;
+}
+
+.box-map5{
+  width: 100%;
+  margin-left: -20rem;
+  margin-top: 5rem;
+}
+
+.title5{
+  color: tomato;
+  margin-left: 4rem;
+}
+
+
+.img-news-meio5{
+ width: 30%;
+    height: 10rem;
+    margin: 2rem;
+}
+
+.title-5{
+  color: tomato;
+  width: 30vh;
+  margin-top: 2rem;
+}
+
+.box-descricao5{  
+  width: 40%;
+    font-size: 10px;
+    margin-top: 2rem;  
+}
+
+.box-return-map5{
+  display: flex;
+    margin-left: 2rem;
 }
 
 footer{
   background-color:#524e72;
-  height: 10%;
+  height: 5rem;
+  
 }
 
 .logo-footer{
@@ -188,14 +227,44 @@ footer{
   height: 10%;
   margin-right: 50%; 
 }
+.box-footer{
+  display: flex;
+}
+.buttons{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-right: 2rem;
+}
+.botao-redondo{
+  width: 11%;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: none;
+    margin-top: 5px;
+}
+.botao-oval{
+  width: 20%;
+  height: 3rem;
+  margin-right: 1rem;
+  border-radius: 45%;
+  border: none;
+  margin-top: 5px;
+}
 
 .volta-topo{
   background-color: #7567d1;
   height: 5vh;
-  font-size: 10px;
+  font-size: 15px;
   color:#ffff;
   display: flex;
   justify-content: flex-end;
   border: none;
+  margin-top: 2rem;
   
+}
+a{
+  text-decoration: none;
 }
