@@ -86,7 +86,7 @@ html, *{
   flex-direction: column;
   justify-content: flex-end;
   color: #000000;
-  margin: -160px 0 0 30px;
+  margin: -125px 0 0 30px;
 
 }
 
@@ -95,16 +95,17 @@ html, *{
   height: 45px;
   font-size: 2rem;
   font-weight: 600;
-  background-color: #59c7e4;
+  background-color:  #9C0B0E;
   color: #FFFFFF;
   padding-left: 15px;
 }
 
 .text_main{
-  font-size: 1.5rem;
+  width: 70%;
+  font-size: 1.4rem;
   font-weight: bold;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #9C0B0E;
 }
 
 .title{
@@ -161,7 +162,7 @@ html, *{
 .title_news{
   font-size: 0.8rem;
   font-weight: bold;
-  color: #59c7e4;
+  color: #9C0B0E;;
   margin-bottom: 5px;
 }
 
@@ -175,7 +176,7 @@ html, *{
   text-overflow: ellipsis; 
 }
 
-container_end_main{
+.container_end_main{
   width: 90%;
 }
 
@@ -188,7 +189,7 @@ container_end_main{
 .texts1{
   width: 45%;
   font-size: 1.2rem;
-  color: #59c7e4;
+  color: #9C0B0E;
   margin: 4rem 0 1rem;
 }
 
@@ -212,10 +213,11 @@ container_end_main{
 
 .box_titles_news{
   width: 100%;
-  height: 11vh;
+  height: 9vh;
   border-bottom: 0.5px solid #000000;
   display:flex;
   justify-content: space-between;
+  margin-top: 13px;
 }
 
 .title_main_news{
@@ -262,4 +264,100 @@ height: 100%;
 .paragrafo_end_main{
   font-size: 0.8rem;
   color:#000000;
+}
+
+.container_footer{
+  width: 100%;
+  height: 20vh;
+  margin-top: 25vh;
+}
+
+.footer{
+  width: 100%;
+  height: 100%;
+}
+
+.footer_part1{
+  width: 100%;
+  height: 40%;
+  background-color: #9C0B0E;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn_footer{
+  width: 15%;
+  height: 20%;
+  background-color:  #9C0B0E;
+  color: #FFFFFF;
+  border-style: none;
+  margin-right: 2rem;
+  outline: #9C0B0E;
+}
+
+.btn_footer p{
+  font-size: 1rem;
+}
+
+.footer_part2{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5C0305;
+}
+
+.block1{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_footer{
+  width: 45%; 
+}
+
+.block2{
+  width: 60%;
+}
+
+.block2 p{
+  width: 90%;
+  font-size: 12px;
+  color:#FFFFFF;
+}
+
+.block3{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.btns1{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border-style: none;
+}
+
+.btns2{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border-style: none;}
+
+.btns3{
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  border-style: none;
 }

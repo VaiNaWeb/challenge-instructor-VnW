@@ -38,7 +38,7 @@ renderMain = () => {
             </div>
             <div className="box_title">
               <h2 className="title_main">BBC NEWS</h2>
-              <p className="text_main"></p>
+              <p className="text_main">Praesent malesuada urna nisi, quis volutpat erat hendrerit non</p>
             </div>
           </div>
         <h2 className="title">BBC NEWS</h2>
@@ -117,6 +117,31 @@ renderMain = () => {
           </div>
         </div>  
         {this.renderMain()}
+        <section className="container_footer">
+          <div className="footer">
+            <div className="footer_part1">
+              <button className="btn_footer">
+                <p>VOLTAR AO TOPO ↑</p>
+              </button>
+            </div>
+            <div className="footer_part2">
+              <div className="block1">
+                <img className="logo_footer" src={Logo} alt="" />
+              </div>
+              <div className="block2">
+                <p className="paragraph_footer">Mussum Ipsum, cacidis vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
+                  Quem manda na minha terra sou euzis! Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+              </div>
+              <div className="block3">
+                <button className="btns1"></button>
+                <button className="btns2"></button>
+                <button className="btns3">
+                  <p>Tela (1)</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>  
       </section>      
     );
   }
